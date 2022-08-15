@@ -43,7 +43,7 @@ export const loginUser = async function (email, password) {
         }),
     });
     const responseJSON = await response.json();
-    con
+
 
     if (responseJSON.success) {
         localStorage.setItem(process.env.REACT_APP_TOKEN_HEADER_KEY, JSON.stringify(responseJSON.token));
